@@ -39,7 +39,7 @@ export function About() {
               </div>
             </div>
 
-            <button className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg font-semibold hover:shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 transform hover:scale-105">
+            <button onClick={() => window.open('https://drive.google.com/file/d/1r_x-9XhqMHehydH4WWNPLSWWwdVTNQKK/view?usp=drive_link', '_blank')} className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg font-semibold hover:shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 transform hover:scale-105">
               <Download size={20} />
               Download Resume
             </button>

@@ -41,7 +41,10 @@ export function Hero() {
             <a href='#projects' className="px-8 py-3  bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg font-semibold hover:shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 transform hover:scale-105">
               View Projects
             </a>
-            <button className="px-8 py-3  border border-gray-600 rounded-lg font-semibold hover:border-blue-400 hover:text-blue-400 transition-all duration-300">
+            <button 
+              onClick={() => window.open('https://drive.google.com/file/d/1r_x-9XhqMHehydH4WWNPLSWWwdVTNQKK/view?usp=drive_link', '_blank')}
+              className="px-8 py-3  border border-gray-600 rounded-lg font-semibold hover:border-blue-400 hover:text-blue-400 transition-all duration-300"
+            >
               Download CV
             </button>
           </div>

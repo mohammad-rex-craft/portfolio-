@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0f0f23;
+  overflow-x: hidden;
+}
+
+.font-orbitron {
+  font-family: 'Orbitron', monospace;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f1f3a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #00d9ff, #8b5cf6);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #00b8e6, #7c3aed);
+}
+
+/* Glassmorphism effect */
+.glass {
+  background: rgba(15, 15, 35, 0.7);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Neon glow effects */
+.neon-blue {
+  box-shadow: 0 0 20px rgba(0, 217, 255, 0.3);
+}
+
+.neon-purple {
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+}
+
+.text-neon-blue {
+  color: #00d9ff;
+  text-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
+}
+
+.text-neon-purple {
+  color: #8b5cf6;
+  text-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #00d9ff, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Neural network pattern */
+.neural-bg {
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(0, 217, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+}
+
+/* Loading animations */
+@keyframes pulse-neon {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(0, 217, 255, 0.6);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-pulse-neon {
+  animation: pulse-neon 2s infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Custom utilities */
+.section-padding {
+  @apply py-20 px-4 sm:px-6 lg:px-8;
+}
+

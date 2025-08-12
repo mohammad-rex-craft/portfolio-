@@ -82,7 +82,7 @@ export function Contact() {
               <h3 className="text-2xl font-orbitron font-bold mb-6 text-neon-blue">
                 Let's Connect
               </h3>
-              <p className="text-gray-300 leading-relaxed mb-8">
+              <p className="text-gray-300 text-sm md:text-md lg:text-lg leading-relaxed mb-8">
                 I'm always excited to work on new projects and collaborate with
                 talented individuals. Whether you have a specific project in mind
                 or just want to chat about technology, feel free to reach out.
@@ -94,7 +94,7 @@ export function Contact() {
                 <a
                   key={info.label}
                   href={info.href}
-                  className="flex items-center gap-4 p-4 glass rounded-lg neon-purple hover:neon-blue transition-all duration-300 group"
+                  className="flex text-sm md:text-md lg:text-lg items-center gap-4 p-4 glass rounded-lg neon-purple hover:neon-blue transition-all duration-300 group"
                 >
                   <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <info.icon className="text-white" size={20} />
